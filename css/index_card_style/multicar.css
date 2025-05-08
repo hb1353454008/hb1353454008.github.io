@@ -1,0 +1,198 @@
+:root {
+  --theme-color: #39c5bb;
+  --text-bg-hover: rgba(57,197,187,0.7);
+}
+.recent-posts {
+  padding: 0 5px 0 5px;
+  height: fit-content;
+}
+.recent-posts .recent-post-item {
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.recent-posts .recent-post-item .recent-post-content {
+  display: flex;
+  position: relative;
+}
+.recent-posts .recent-post-item .recent-post-content .recent-post-cover {
+  display: flex;
+  background: transparent;
+}
+.recent-posts .recent-post-item .recent-post-content .recent-post-info {
+  display: flex;
+  background: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.recent-posts .recent-post-item .recent-post-content .recent-post-info .article-title {
+  height: 50%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.recent-posts .recent-post-item .recent-post-content .recent-post-info .article-title .article-title-link {
+  color: var(--text-highlight-color);
+  transition: all 0.2s ease-in-out;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.recent-posts .recent-post-item .recent-post-content .recent-post-info .article-title .article-title-link:hover {
+  color: var(--theme-color);
+}
+.recent-posts .recent-post-item .recent-post-content .recent-post-info .recent-post-meta {
+  height: 50%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.recent-posts .recent-post-item .recent-post-content .recent-post-info .recent-post-meta .article-meta-wrap {
+  color: #969797;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.recent-posts .recent-post-item .recent-post-content .recent-post-info .recent-post-meta .article-meta-wrap a {
+  color: var(--text-highlight-color);
+  transition: all 0.2s ease-in-out;
+  color: #969797;
+}
+.recent-posts .recent-post-item .recent-post-content .recent-post-info .recent-post-meta .article-meta-wrap a:hover {
+  color: var(--theme-color);
+}
+.recent-posts .recent-post-item .recent-post-content .article-content {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.recent-posts .recent-post-item .recent-post-content .article-content .article-content-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #fff;
+  text-shadow: 1px 2px 3px #000;
+  transition: transform 0.6s;
+}
+.recent-posts .recent-post-item .recent-post-content .article-content .article-content-text:hover {
+  transform: scale(1.1);
+}
+.recent-posts .recent-post-item.ads-wrap {
+  display: block !important;
+  height: auto !important;
+}
+.recent-posts nav#pagination {
+  width: 100%;
+}
+.recent-posts {
+  padding: 0 5px 0 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.recent-posts .recent-post-item {
+  border-radius: 15px;
+  overflow: hidden;
+}
+.recent-posts .recent-post-item .recent-post-content {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  max-height: 350px;
+  height: auto;
+  width: 100%;
+}
+.recent-posts .recent-post-item .recent-post-content .recent-post-cover {
+  width: 100%;
+  height: 200px;
+  clip-path: polygon(0 130px, 0 0, 100% 0, 100% 130px, 50% 100%);
+}
+.recent-posts .recent-post-item .recent-post-content .recent-post-cover img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.recent-posts .recent-post-item .recent-post-content .recent-post-info {
+  height: 145px;
+  width: 100%;
+  padding: 0px 25px 5px 25px;
+}
+.recent-posts .recent-post-item .recent-post-content .recent-post-info .article-title {
+  margin: 0px 40px;
+  font-size: 19px;
+}
+.recent-posts .recent-post-item .recent-post-content .recent-post-info .article-title .article-title-link {
+  -webkit-line-clamp: 2;
+}
+.recent-posts .recent-post-item .recent-post-content .recent-post-info .recent-post-meta {
+  margin: 0px 20px;
+}
+.recent-posts .recent-post-item .recent-post-content .recent-post-info .recent-post-meta .article-meta-wrap {
+  font-size: 13px;
+  -webkit-line-clamp: 3;
+}
+.recent-posts .recent-post-item .recent-post-content .article-content {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  background: rgba(25,25,25,0.4);
+  clip-path: polygon(0 130px, 0 0, 100% 0, 100% 130px, 50% 100%);
+}
+.recent-posts .recent-post-item .recent-post-content .article-content .article-content-text {
+  -webkit-line-clamp: 3;
+  font-size: 16px;
+  margin: 0px 25px 30px 25px;
+}
+.recent-posts .recent-post-item .recent-post-content .article-content .article-content-text::before {
+  content: "「";
+  font-size: 20px;
+}
+.recent-posts .recent-post-item .recent-post-content .article-content .article-content-text::after {
+  content: "」";
+  font-size: 20px;
+}
+.recent-posts .recent-post-item .recent-post-content .recent-post-arrow {
+  display: block;
+  background: var(--text-bg-hover);
+  position: absolute;
+  height: 10px;
+  width: 20px;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+@media screen and (min-width: 1069px) {
+  .recent-posts .recent-post-item {
+    width: 32.3%;
+    margin: 0px 1% 20px 0px;
+  }
+  .recent-posts .recent-post-item .recent-post-content .recent-post-info .article-title {
+    margin: 0px 5px;
+  }
+  .recent-posts .recent-post-item .recent-post-content .recent-post-info .article-title .article-title-link {
+    -webkit-line-clamp: 1;
+  }
+  .recent-posts .recent-post-item .recent-post-content .recent-post-info .recent-post-meta {
+    margin: 0px 5px;
+  }
+  .recent-posts .recent-post-item .recent-post-content .recent-post-info .recent-post-meta .article-meta-wrap {
+    -webkit-line-clamp: 2;
+  }
+}
+@media screen and (min-width: 572px) and (max-width: 1068px) {
+  .recent-posts .recent-post-item {
+    width: 47%;
+    margin: 0px 3% 20px 0px;
+  }
+}
+@media screen and (max-width: 572px) {
+  .recent-posts .recent-post-item {
+    width: 100%;
+  }
+}
